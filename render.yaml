@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: arogya-dental-api
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm install
+    startCommand: node backend/server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SERVE_FRONTEND
+        value: "false"
+      - key: PORT
+        value: "10000"
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: CLINIC_EMAIL
+        sync: false
+      - key: CLINIC_PHONE
+        sync: false
+      - key: BREVO_API_KEY
+        sync: false
+      - key: BREVO_SENDER_NAME
+        value: Arogya Dental
+      - key: BREVO_SENDER_EMAIL
+        sync: false
+      - key: FRONTEND_URL
+        sync: false

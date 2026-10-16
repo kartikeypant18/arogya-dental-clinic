@@ -1,0 +1,44 @@
+{
+  "name": "arogya-dental-clinic",
+  "version": "1.0.0",
+  "description": "Arogya Dental Clinic website with booking, blogs, and admin panel",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "start:full": "npm run build && node backend/server.js",
+    "dev": "nodemon --watch backend backend/server.js -- --dev",
+    "build": "vite build --config client/vite.config.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dental",
+    "clinic",
+    "appointment",
+    "blog",
+    "express",
+    "mongodb"
+  ],
+  "author": "Arogya Dental Clinic",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "nodemon": "^3.1.4",
+    "vite": "^5.4.11"
+  }
+}

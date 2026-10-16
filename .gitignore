@@ -1,0 +1,11 @@
+node_modules/
+client/dist/
+.env
+backend/.env
+client/.env
+client/.env.local
+.vercel
+npm-debug.log*
+.DS_Store
+Thumbs.db
+*.log
